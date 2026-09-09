@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spotify Clone</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-brands fa-spotify"></i>
+            <span>Spotify</span>
+        </div>
+
+        <nav>
+            <a href="#" class="active">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-book"></i>
+                Your Library
+            </a>
+        </nav>
+
+        <div class="playlist-menu">
+
+            <p class="menu-title">YOUR PLAYLISTS</p>
+
+            <a href="#">
+                <i class="fa-solid fa-plus"></i>
+                Create Playlist
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                Liked Songs
+            </a>
+
+            <hr>
+
+            <a href="#">Chill Vibes</a>
+            <a href="#">Workout Music</a>
+            <a href="#">K-Pop Hits</a>
+            <a href="#">Study Time</a>
+            <a href="#">My Favorites</a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div class="navigation">
+                <button>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="account">
+
+                <button class="premium-btn">
+                    Explore Premium
+                </button>
+
+                <button class="profile-btn">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-text">SPOTIFY PLAYLIST</p>
+
+                <h1>Music for everyone.</h1>
+
+                <p>
+                    Millions of songs. No credit card needed.
+                    Discover music that matches your mood.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="green-btn">
+                        <i class="fa-solid fa-play"></i>
+                        Play Now
+                    </button>
+
+                    <button class="outline-btn">
+                        Browse Music
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-images">
+
+                <div class="hero-card card-one">
+                    <img src="https://picsum.photos/seed/music1/500/500"
+                         alt="Music">
+                </div>
+
+                <div class="hero-card card-two">
+                    <img src="https://picsum.photos/seed/music2/500/500"
+                         alt="Music">
+                </div>
+
+                <div class="hero-card card-three">
+                    <img src="https://picsum.photos/seed/music3/500/500"
+                         alt="Music">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- POPULAR ALBUMS -->
+        <section class="section">
+
+            <div class="section-heading">
+                <h2>Popular albums</h2>
+                <a href="#">Show all</a>
+            </div>
+
+            <div class="music-grid">
+
+                <div class="music-card">
+
+                    <div class="image-container">
+                        <img src="https://picsum.photos/seed/album1/500/500"
+                             alt="Album">
+
+                        <button class="play-button">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+
+                    <h3>Midnight Dreams</h3>
+                    <p>Various Artists</p>
+
+                </div>
+
+
+                <div class="music-card">
+
+                    <div class="image-container">
+                        <img src="https://picsum.photos/seed/album2/500/500"
+                             alt="Album">
+
+                        <button class="play-button">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+
+                    <h3>Summer Vibes</h3>
+                    <p>Pop Collection</p>
+
+                </div>
+
+
+                <div class="music-card">
+
+                    <div class="image-container">
+                        <img src="https://picsum.photos/seed/album3/500/500"
+                             alt="Album">
+
+                        <button class="play-button">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+
+                    <h3>Late Night</h3>
+                    <p>Chill Artists</p>
+
+                </div>
+
+
+                <div class="music-card">
+
+                    <div class="image-container">
+                        <img src="https://picsum.photos/seed/album4/500/500"
+                             alt="Album">
+
+                        <button class="play-button">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+
+                    <h3>Focus Flow</h3>
+                    <p>Study Music</p>
+
+                </div>
+
+
+                <div class="music-card">
+
+                    <div class="image-container">
+                        <img src="https://picsum.photos/seed/album5/500/500"
+                             alt="Album">
+
+                        <button class="play-button">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+
+                    <h3>Neon Nights</h3>
+                    <p>Electronic Mix</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRENDING -->
+        <section class="section">
+
+            <div class="section-heading">
+                <h2>Trending now</h2>
+                <a href="#">Show all</a>
+            </div>
+
+            <div class="music-grid">
+
+                <div class="music-card">
+
+                    <div class="image-container">
+                        <img src="https://picsum.photos/seed/trend1/500/500"
+                             alt="Trending music">
+
+                        <button class="play-button">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+
+                    <h3>Today's Top Hits</h3>
+                    <p>The biggest songs right now.</p>
+
+                </div>
+
+
+                <div class="music-card">
+
+                    <div class="image-container">
+                        <img src="https://picsum.photos/seed/trend2/500/500"
+                             alt="Trending music">
+
+                        <button class="play-button">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+
+                    <h3>Global Hits</h3>
+                    <p>Music from around the world.</p>
+
+                </div>
+
+
+                <div class="music-card">
+
+                    <div class="image-container">
+                        <img src="https://picsum.photos/seed/trend3/500/500"
+                             alt="Trending music">
+
+                        <button class="play-button">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+
+                    <h3>Fresh Finds</h3>
+                    <p>Discover something new.</p>
+
+                </div>
+
+
+                <div class="music-card">
+
+                    <div class="image-container">
+                        <img src="https://picsum.photos/seed/trend4/500/500"
+                             alt="Trending music">
+
+                        <button class="play-button">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+
+                    <h3>Chill Hits</h3>
+                    <p>Relax and enjoy the music.</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTTOM MESSAGE -->
+        <section class="bottom-banner">
+
+            <div>
+                <p class="banner-small">GET SPOTIFY FREE</p>
+                <h2>Bring your music everywhere.</h2>
+                <p>
+                    Listen to your favorite songs wherever you go.
+                </p>
+            </div>
+
+            <button class="green-btn">
+                Sign up free
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- MUSIC PLAYER -->
+    <footer class="player">
+
+        <div class="now-playing">
+
+            <img src="https://picsum.photos/seed/playing/100/100"
+                 alt="Currently playing">
+
+            <div>
+                <h4>Midnight Dreams</h4>
+                <p>Various Artists</p>
+            </div>
+
+            <button>
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+        </div>
+
+
+        <div class="player-controls">
+
+            <div class="control-buttons">
+
+                <button>
+                    <i class="fa-solid fa-shuffle"></i>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+
+                <button class="main-play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-repeat"></i>
+                </button>
+
+            </div>
+
+            <div class="progress">
+
+                <span>0:00</span>
+
+                <div class="progress-bar">
+                    <div></div>
+                </div>
+
+                <span>3:45</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="volume">
+
+            <i class="fa-solid fa-volume-high"></i>
+
+            <div class="volume-bar">
+                <div></div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
