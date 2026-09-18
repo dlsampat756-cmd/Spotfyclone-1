@@ -6,79 +6,102 @@
 
     <title>Spotify Clone</title>
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4Etwn9YseNZjBn99AHtkQXAkeDoT7UKtSsRUVz0ldA&s=10">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- SIDEBAR -->
+    <!-- Homepage design -->
+
+    <!-- SIDEBAR (Navigation bar) -->
     <aside class="sidebar">
 
-        <div class="logo">
-            <i class="fa-brands fa-spotify"></i>
-            <span>Spotify</span>
+        <div class="sidebar-box logo-box">
+            <a href="#" class="logo">
+                <svg class="icon icon-logo" viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 4.32-1.32 9.66-.66 13.32 1.56.42.24.6.78.42 1.26zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.72-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z" fill="currentColor"/></svg>
+                <span class="logo-text">Spotify</span>
+            </a>
         </div>
 
-        <nav>
-            <a href="#" class="active">
-                <i class="fa-solid fa-house"></i>
-                Home
-            </a>
+        <div class="sidebar-box">
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="active">
+                        <svg class="icon icon-nav" viewBox="0 0 24 24"><path d="M4 11.5L12 4l8 7.5V21a1 1 0 0 1-1 1h-4.5v-7h-5v7H5a1 1 0 0 1-1-1z" fill="currentColor"/></svg>
+                        <span>Home</span>
+                    </a>
+                </li>
 
-            <a href="#">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                Search
-            </a>
+                <li>
+                    <a href="#">
+                        <svg class="icon icon-nav" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/> <line x1="21" y1="21" x2="15.5" y2="15.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                        <span>Search</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-            <a href="#">
-                <i class="fa-solid fa-book"></i>
-                Your Library
-            </a>
-        </nav>
+        <div class="sidebar-box library-box">
 
-        <div class="playlist-menu">
+            <div class="library-title">
+                <span>
+                    <svg class="icon icon-nav" viewBox="0 0 24 24"><path d="M5 3.5A1.5 1.5 0 0 1 6.5 2H19v18H6.5A1.5 1.5 0 0 0 5 21.5z" fill="none" stroke="currentColor" stroke-width="1.6"/> <path d="M8 2v18" stroke="currentColor" stroke-width="1.6"/></svg>
+                    Your Library
+                </span>
 
-            <p class="menu-title">YOUR PLAYLISTS</p>
+                <button class="add-btn">
+                    <svg class="icon icon-menu" viewBox="0 0 24 24"><line x1="12" y1="4" x2="12" y2="20" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/> <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+                </button>
+            </div>
 
-            <a href="#">
-                <i class="fa-solid fa-plus"></i>
-                Create Playlist
-            </a>
+            <div class="playlist-scroll">
 
-            <a href="#">
-                <i class="fa-regular fa-heart"></i>
-                Liked Songs
-            </a>
+                <div class="playlist-card">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
 
-            <hr>
+                <div class="playlist-card">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button>Browse podcasts</button>
+                </div>
 
-            <a href="#">Chill Vibes</a>
-            <a href="#">Workout Music</a>
-            <a href="#">K-Pop Hits</a>
-            <a href="#">Study Time</a>
-            <a href="#">My Favorites</a>
+            </div>
+
+            <div class="sidebar-links">
+                <a href="#">Legal</a>
+                <a href="#">Privacy Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+                <a href="#">About Ads</a>
+                <a href="#">Accessibility</a>
+            </div>
+
+            <button class="language-btn">
+                <svg class="icon icon-menu" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.6"/> <ellipse cx="12" cy="12" rx="4.2" ry="9.5" fill="none" stroke="currentColor" stroke-width="1.6"/> <line x1="2.5" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.6"/></svg>
+                English
+            </button>
 
         </div>
 
     </aside>
 
-
     <!-- MAIN CONTENT -->
     <main class="main">
 
-        <!-- TOP BAR -->
+        <!-- TOP BAR (Navigation bar) -->
         <header class="topbar">
 
             <div class="navigation">
                 <button>
-                    <i class="fa-solid fa-chevron-left"></i>
+                    <svg class="icon icon-nav-btn" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
 
                 <button>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <svg class="icon icon-nav-btn" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
             </div>
 
@@ -89,17 +112,16 @@
                 </button>
 
                 <button class="profile-btn">
-                    <i class="fa-solid fa-user"></i>
+                    <svg class="icon icon-profile" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6" fill="currentColor"/> <path d="M4.5 20c0-4.1 3.4-7.2 7.5-7.2s7.5 3.1 7.5 7.2z" fill="currentColor"/></svg>
                     Profile
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <svg class="icon icon-caret" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
 
             </div>
 
         </header>
 
-
-        <!-- HERO -->
+        <!-- HERO (Hero section) -->
         <section class="hero">
 
             <div class="hero-content">
@@ -116,7 +138,7 @@
                 <div class="hero-buttons">
 
                     <button class="green-btn">
-                        <i class="fa-solid fa-play"></i>
+                        <svg class="icon icon-btn" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                         Play Now
                     </button>
 
@@ -128,28 +150,26 @@
 
             </div>
 
-
             <div class="hero-images">
 
                 <div class="hero-card card-one">
-                    <img src="https://picsum.photos/seed/music1/500/500"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfZ-xkN26Ou1F86wY3v_lmxcoSEht_lqINmhLUME6s-g&s=10"
                          alt="Music">
                 </div>
 
                 <div class="hero-card card-two">
-                    <img src="https://picsum.photos/seed/music2/500/500"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK8-nQfekwd6dn1ss49lNcfrAeRa2eQUp97v2z6jvGpg&s=10"
                          alt="Music">
                 </div>
 
                 <div class="hero-card card-three">
-                    <img src="https://picsum.photos/seed/music3/500/500"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqwkXu4EevWGb0vE7ul45pBnfyH2QP17uUFpwE61AH7A&s=10"
                          alt="Music">
                 </div>
 
             </div>
 
         </section>
-
 
         <!-- POPULAR ALBUMS -->
         <section class="section">
@@ -164,84 +184,80 @@
                 <div class="music-card">
 
                     <div class="image-container">
-                        <img src="https://picsum.photos/seed/album1/500/500"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcG-w-R4BrdnxBehm7PzxfYTafddw9KLU2mnWX8A1Elg&s=10"
                              alt="Album">
 
                         <button class="play-button">
-                            <i class="fa-solid fa-play"></i>
+                            <svg class="icon icon-play-btn" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                         </button>
                     </div>
 
-                    <h3>Midnight Dreams</h3>
-                    <p>Various Artists</p>
+                    <h3>Justice</h3>
+                    <p>Album by Justin Bieber </p>
 
                 </div>
-
 
                 <div class="music-card">
 
                     <div class="image-container">
-                        <img src="https://picsum.photos/seed/album2/500/500"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv2ptNsLULWTvz0tSQ_8PT5hOBl3Qr2MmgJAOeJUWHXA&s"
                              alt="Album">
 
                         <button class="play-button">
-                            <i class="fa-solid fa-play"></i>
+                            <svg class="icon icon-play-btn" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                         </button>
                     </div>
 
-                    <h3>Summer Vibes</h3>
-                    <p>Pop Collection</p>
+                    <h3>Whatever's Clever! </h3>
+                    <p>Album by Charlie Puth</p>
 
                 </div>
-
 
                 <div class="music-card">
 
                     <div class="image-container">
-                        <img src="https://picsum.photos/seed/album3/500/500"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ-w5ZLESOAjQ6gZZ2IVyUz057mNKlneuTjjwhaGmUnA&s"
                              alt="Album">
 
                         <button class="play-button">
-                            <i class="fa-solid fa-play"></i>
+                            <svg class="icon icon-play-btn" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                         </button>
                     </div>
 
-                    <h3>Late Night</h3>
-                    <p>Chill Artists</p>
+                    <h3>My World</h3>
+                    <p>Album by Justin Bieber</p>
 
                 </div>
-
 
                 <div class="music-card">
 
                     <div class="image-container">
-                        <img src="https://picsum.photos/seed/album4/500/500"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkIKyUdnsmy8tOQmhgnR-Ckr0FPHFZ_PYVARnHkhhCqQ&s"
                              alt="Album">
 
                         <button class="play-button">
-                            <i class="fa-solid fa-play"></i>
+                            <svg class="icon icon-play-btn" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                         </button>
                     </div>
 
-                    <h3>Focus Flow</h3>
-                    <p>Study Music</p>
+                    <h3>Nine Track Mind</h3>
+                    <p>Album by Charlie Puth</p>
 
                 </div>
-
 
                 <div class="music-card">
 
                     <div class="image-container">
-                        <img src="https://picsum.photos/seed/album5/500/500"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtimjTxXTDXtq4XkDZYihxjpNz0lxz4IoTnenjtRSEtQ&s=10"
                              alt="Album">
 
                         <button class="play-button">
-                            <i class="fa-solid fa-play"></i>
+                            <svg class="icon icon-play-btn" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                         </button>
                     </div>
 
-                    <h3>Neon Nights</h3>
-                    <p>Electronic Mix</p>
+                    <h3>Believe</h3>
+                    <p>Album by Justin Bieber</p>
 
                 </div>
 
@@ -249,12 +265,11 @@
 
         </section>
 
-
         <!-- TRENDING -->
         <section class="section">
 
             <div class="section-heading">
-                <h2>Trending now</h2>
+                <h2>Trending songs</h2>
                 <a href="#">Show all</a>
             </div>
 
@@ -263,74 +278,70 @@
                 <div class="music-card">
 
                     <div class="image-container">
-                        <img src="https://picsum.photos/seed/trend1/500/500"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK8-nQfekwd6dn1ss49lNcfrAeRa2eQUp97v2z6jvGpg&s=10"
                              alt="Trending music">
 
                         <button class="play-button">
-                            <i class="fa-solid fa-play"></i>
+                            <svg class="icon icon-play-btn" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                         </button>
                     </div>
 
-                    <h3>Today's Top Hits</h3>
-                    <p>The biggest songs right now.</p>
+                    <h3>let me love you</h3>
+                    <p>DJ Snake,Justin Bieber</p>
 
                 </div>
-
 
                 <div class="music-card">
 
                     <div class="image-container">
-                        <img src="https://picsum.photos/seed/trend2/500/500"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSReisLRFmGx9SjUTZ0ZWZqvNscxhA15U6WqizQ6mmtsA&s=10"
                              alt="Trending music">
 
                         <button class="play-button">
-                            <i class="fa-solid fa-play"></i>
+                            <svg class="icon icon-play-btn" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                         </button>
                     </div>
 
-                    <h3>Global Hits</h3>
-                    <p>Music from around the world.</p>
+                    <h3>We Don't Talk Anymore</h3>
+                    <p>Charlie Puth,Selena Gomez</p>
 
                 </div>
-
 
                 <div class="music-card">
 
                     <div class="image-container">
-                        <img src="https://picsum.photos/seed/trend3/500/500"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfZ-xkN26Ou1F86wY3v_lmxcoSEht_lqINmhLUME6s-g&s=10"
                              alt="Trending music">
 
                         <button class="play-button">
-                            <i class="fa-solid fa-play"></i>
+                            <svg class="icon icon-play-btn" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                         </button>
                     </div>
 
-                    <h3>Fresh Finds</h3>
-                    <p>Discover something new.</p>
+                    <h3>Night Changes</h3>
+                    <p>One Direction</p>
 
                 </div>
-
 
                 <div class="music-card">
 
                     <div class="image-container">
-                        <img src="https://picsum.photos/seed/trend4/500/500"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqwkXu4EevWGb0vE7ul45pBnfyH2QP17uUFpwE61AH7A&s=10"
                              alt="Trending music">
 
                         <button class="play-button">
-                            <i class="fa-solid fa-play"></i>
+                            <svg class="icon icon-play-btn" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                         </button>
                     </div>
 
-                    <h3>Chill Hits</h3>
-                    <p>Relax and enjoy the music.</p>
+                    <h3>Believer</h3>
+                    <p>Imagine Dragons</p>
 
                 </div>
 
             </div>
 
         </section>
-
 
         <!-- BOTTOM MESSAGE -->
         <section class="bottom-banner">
@@ -349,11 +360,69 @@
 
         </section>
 
+        <!-- SITE FOOTER (Footer section) -->
+        <footer class="site-footer">
+
+            <div class="footer-columns">
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">For the Record</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Communities</h4>
+                    <a href="#">For Artists</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">Investors</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <a href="#">Support</a>
+                    <a href="#">Free Mobile App</a>
+                    <a href="#">Popular Playlists</a>
+                </div>
+
+                <div class="footer-col footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram">
+                            <svg class="icon icon-social" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.014 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.014 8.333 0 8.74 0 12s.014 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.789.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.014 4.947-.072c1.277-.06 2.148-.262 2.913-.558.789-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.014-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.014 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.406-11.845c-.796 0-1.44.645-1.44 1.44s.644 1.44 1.44 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/></svg>
+                        </a>
+                        <a href="#" aria-label="X">
+                            <svg class="icon icon-social" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg class="icon icon-social" viewBox="0 0 24 24"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" fill="currentColor"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Legal</a>
+                    <a href="#">Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                </div>
+
+                <p class="footer-copy">&copy; 2026 Spotify Clone. All rights reserved.</p>
+            </div>
+
+        </footer>
+
     </main>
 
-
     <!-- MUSIC PLAYER -->
-    <footer class="player">
+    <div class="player">
 
         <div class="now-playing">
 
@@ -366,34 +435,33 @@
             </div>
 
             <button>
-                <i class="fa-regular fa-heart"></i>
+                <svg class="icon icon-np" viewBox="0 0 24 24"><path d="M12 20.5S3.5 15 3.5 9A4.5 4.5 0 0 1 12 6.3 4.5 4.5 0 0 1 20.5 9c0 6-8.5 11.5-8.5 11.5z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
             </button>
 
         </div>
-
 
         <div class="player-controls">
 
             <div class="control-buttons">
 
                 <button>
-                    <i class="fa-solid fa-shuffle"></i>
+                    <svg class="icon icon-ctrl" viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <line x1="4" y1="20" x2="21" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/> <polyline points="21 16 21 21 16 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <line x1="15" y1="15" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/> <line x1="4" y1="4" x2="9" y2="9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
                 </button>
 
                 <button>
-                    <i class="fa-solid fa-backward-step"></i>
+                    <svg class="icon icon-ctrl" viewBox="0 0 24 24"><path d="M6 5h2v14H6z" fill="currentColor"/> <path d="M19 5L9 12l10 7z" fill="currentColor"/></svg>
                 </button>
 
                 <button class="main-play">
-                    <i class="fa-solid fa-play"></i>
+                    <svg class="icon icon-main-play" viewBox="0 0 24 24"><path d="M7 4.5v15L19 12z" fill="currentColor"/></svg>
                 </button>
 
                 <button>
-                    <i class="fa-solid fa-forward-step"></i>
+                    <svg class="icon icon-ctrl" viewBox="0 0 24 24"><path d="M16 5h2v14h-2z" fill="currentColor"/> <path d="M5 5l10 7-10 7z" fill="currentColor"/></svg>
                 </button>
 
                 <button>
-                    <i class="fa-solid fa-repeat"></i>
+                    <svg class="icon icon-ctrl" viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M3 11V9a4 4 0 0 1 4-4h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/> <polyline points="7 23 3 19 7 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M21 13v2a4 4 0 0 1-4 4H3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
                 </button>
 
             </div>
@@ -412,10 +480,9 @@
 
         </div>
 
-
         <div class="volume">
 
-            <i class="fa-solid fa-volume-high"></i>
+            <svg class="icon icon-volume" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/> <path d="M15.5 8.5a5 5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/> <path d="M18.5 5.5a9 9 0 0 1 0 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
 
             <div class="volume-bar">
                 <div></div>
@@ -423,8 +490,7 @@
 
         </div>
 
-    </footer>
-
+    </div>
 
 </body>
 </html>
